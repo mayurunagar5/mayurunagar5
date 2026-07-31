@@ -110,9 +110,10 @@ class Mayur:
 
 ## 2026 Roadmap
 
+
 - [x] Learn Git & GitHub
 - [x] Complete WordPress Internship
-- [x] Start Python
+- [x] Complete Python Fundamentals
 - [ ] Master Data Structures
 - [ ] Learn NumPy
 - [ ] Learn Pandas
