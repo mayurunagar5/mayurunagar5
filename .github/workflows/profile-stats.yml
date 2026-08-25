@@ -1,1 +1,300 @@
+Absolutely. Let's start **from zero** and do only the two sections you want.
+
+This time we'll use a GitHub Action that generates the SVG **inside your own repository**, so there is no `vercel.app` image dependency. The current action documentation confirms that `contributions` provides the streak + 12-month contribution calendar, while `lifetime` provides contribution history. ([GitHub][1])
+
+# Step 1 — Open your profile repository
+
+Go to:
+
+[Your GitHub Profile Repository](https://github.com/mayurunagar5/mayurunagar5?utm_source=chatgpt.com)
+
+It should be:
+
+```text
+mayurunagar5 / mayurunagar5
+```
+
+Your `README.md` should already be there.
+
+---
+
+# Step 2 — Create the workflow folder
+
+Inside that repository:
+
+**Add file → Create new file**
+
+For the filename, enter:
+
+```text
+.github/workflows/profile-stats.yml
+```
+
+GitHub will automatically create the folders.
+
+---
+
+# Step 3 — Paste this EXACT code
+
+Delete anything currently inside that file and paste:
+
+```yaml
+name: Update GitHub Profile Stats
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Generate profile cards
+        uses: seijikohara/profile-cards-action@v0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          username: mayurunagar5
+          cards: contributions,lifetime
+          output-dir: profile
+          themes: dark
+          commit: true
+```
+
+**Don't change `GITHUB_TOKEN`.**
+
+The action documentation specifically requires `github-token`, and `contents: write` allows the workflow to commit the generated SVG files back to the repository. ([GitHub][1])
+
+---
+
+# Step 4 — Commit the workflow
+
+Scroll down.
+
+Click:
+
+**Commit changes**
+
+Then:
+
+**Commit directly to the `main` branch**
+
+Click **Commit changes**.
+
+---
+
+# Step 5 — Open Actions
+
+At the top of your repository, click:
+
+**Actions**
+
+You should see:
+
+**Update GitHub Profile Stats**
+
+Click it.
+
+---
+
+# Step 6 — Run it manually
+
+On the right side, click:
+
+**Run workflow**
+
+Then click the green:
+
+**Run workflow**
+
+button.
+
+Wait for it to finish.
+
+You want to see:
+
+```text
+✓ Update GitHub Profile Stats
+```
+
+not:
+
+```text
+✕ Update GitHub Profile Stats
+```
+
+---
+
+# Step 7 — Check your repository
+
+Go back to the main repository page.
+
+You should now see a new folder:
+
+```text
+profile
+```
+
+Open it.
+
+You should have:
+
+```text
+profile/
+├── contributions.dark.svg
+└── lifetime.dark.svg
+```
+
+The action generates files using the format:
+
+```text
+<card>.<theme>.svg
+```
+
+so these filenames are expected. ([GitHub][1])
+
+---
+
+# Step 8 — Change ONLY your README sections
+
+Now open `README.md`.
+
+Delete your current:
+
+```text
+### Contribution Streak
+...
+```
+
+and:
+
+```text
+### Contribution Graph
+...
+```
+
+Replace them with:
+
+```md
+### 🔥 Contribution Streak
+
+<p align="center">
+  <img
+    src="./profile/contributions.dark.svg"
+    width="900"
+    alt="Mayur Unagar Contribution Streak"
+  />
+</p>
+
+---
+
+### 📊 Contribution Graph
+
+<p align="center">
+  <img
+    src="./profile/lifetime.dark.svg"
+    width="900"
+    alt="Mayur Unagar Contribution Graph"
+  />
+</p>
+```
+
+Then commit your README.
+
+---
+
+# Step 9 — Your GitHub Analytics should now look like
+
+```md
+## GitHub Analytics
+
+### 🔥 Contribution Streak
+
+<p align="center">
+  <img
+    src="./profile/contributions.dark.svg"
+    width="900"
+    alt="Mayur Unagar Contribution Streak"
+  />
+</p>
+
+---
+
+### 📊 Contribution Graph
+
+<p align="center">
+  <img
+    src="./profile/lifetime.dark.svg"
+    width="900"
+    alt="Mayur Unagar Contribution Graph"
+  />
+</p>
+```
+
+### What each one does
+
+**Contribution Streak**
+
+The `contributions` card contains your **current streak, longest streak, and trailing 12-month contribution calendar**. ([GitHub][1])
+
+**Contribution Graph**
+
+The `lifetime` card displays your **contribution history by year**. ([GitHub][1])
+
+And the Action automatically regenerates the SVG on the schedule you specified. ([GitHub][1])
+
+---
+
+## ⚠️ Very important
+
+Don't test this by putting the URL into your browser.
+
+You should **not** have:
+
+```text
+https://github-readme-stats.vercel.app/...
+```
+
+or:
+
+```text
+https://github-readme-activity-graph.vercel.app/...
+```
+
+anywhere in these two sections.
+
+The README should point to:
+
+```text
+./profile/contributions.dark.svg
+```
+
+and:
+
+```text
+./profile/lifetime.dark.svg
+```
+
+These are **files inside your own GitHub repository**.
+
+---
+
+### If Step 6 fails
+
+**Stop there. Don't change the code.**
+
+Send me a screenshot of:
+
+**Repository → Actions → Update GitHub Profile Stats → failed run → error**
+
+I'll identify the exact error from the screenshot and give you the corrected code.
+
+[1]: https://github.com/seijikohara/profile-cards-action?utm_source=chatgpt.com "GitHub - seijikohara/profile-cards-action: GitHub Action that renders profile README cards (SVG) from the GitHub API: overview, contribution history, streaks, composition, activity rhythm, and a language treemap — with embedded fonts and brand badges. · GitHub"
 
