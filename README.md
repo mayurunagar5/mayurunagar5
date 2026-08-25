@@ -69,16 +69,10 @@ class Mayur:
 ###  Contribution Streak
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mayurunagar5/mayurunagar5/main/profile/contributions.svg" width="900" alt="Contribution Streak" />
+  <img src="https://raw.githubusercontent.com/mayurunagar5/mayurunagar5/main/profile/contributions.dark.svg" width="900" alt="Contribution Streak" />
 </p>
 
 ---
-
-###  Contribution Graph
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/mayurunagar5/mayurunagar5/main/profile/lifetime.dark.svg" width="900" alt="Contribution Graph" />
-</p>
 
 ## Featured Projects
 
