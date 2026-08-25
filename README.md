@@ -63,8 +63,13 @@ class Mayur:
   <img src="https://skillicons.dev/icons?i=python,jupyter&perline=2" alt="AI and Data Science Stack"/>
 </p>
 <p align="center">
-  <code>NumPy</code> • <code>Pandas</code> • <code>Matplotlib</code> • <code>Scikit-Learn</code>
+ <p align="center">
+  <img src="https://img.shields.io/badge/NumPy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"/>
+  <img src="https://img.shields.io/badge/Pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
+  <img src="https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=matplotlib&logoColor=black" alt="Matplotlib"/>
+  <img src="https://img.shields.io/badge/Scikit--Learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn"/>
 </p>
+ 
 
 ### Tools & Technologies
 <p align="center">
