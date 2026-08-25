@@ -66,12 +66,10 @@ class Mayur:
 
 ## GitHub Analytics
 
-## GitHub Analytics
-
 ###  Contribution Streak
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mayurunagar5/mayurunagar5/main/profile/contributions.dark.svg" width="900" alt="Contribution Streak" />
+  <img src="https://raw.githubusercontent.com/mayurunagar5/mayurunagar5/main/profile/contributions.svg" width="900" alt="Contribution Streak" />
 </p>
 
 ---
