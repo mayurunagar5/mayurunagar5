@@ -68,7 +68,7 @@ class Mayur:
 
 ## GitHub Analytics
 
-### 🔥 Contribution Streak
+###  Contribution Streak
 
 <p align="center">
   <img
@@ -80,11 +80,11 @@ class Mayur:
 
 ---
 
-### 📊 Contribution Graph
+###  Contribution Graph
 
 <p align="center">
   <img
-    src="./profile/contributions.svg"
+    src="./profile/contributions.dark.svg"
     width="900"
     alt="Mayur Unagar Contribution Graph"
   />
