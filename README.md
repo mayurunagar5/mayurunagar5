@@ -71,11 +71,7 @@ class Mayur:
 ###  Contribution Streak
 
 <p align="center">
-  <img
-    src="./profile/streak.svg"
-    width="495"
-    alt="GitHub Contribution Streak"
-  />
+  <img src="https://raw.githubusercontent.com/mayurunagar5/mayurunagar5/main/profile/contributions.dark.svg" width="900" alt="Contribution Streak" />
 </p>
 
 ---
@@ -83,11 +79,7 @@ class Mayur:
 ###  Contribution Graph
 
 <p align="center">
-  <img
-    src="./profile/contributions.dark.svg"
-    width="900"
-    alt="Mayur Unagar Contribution Graph"
-  />
+  <img src="https://raw.githubusercontent.com/mayurunagar5/mayurunagar5/main/profile/lifetime.dark.svg" width="900" alt="Contribution Graph" />
 </p>
 
 ## Featured Projects
