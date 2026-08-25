@@ -67,11 +67,11 @@ class Mayur:
 ## GitHub Analytics
 
 ### Contribution Streak
-
 <p align="center">
-
-<img src="https://github-readme-streak-stats-eight.vercel.app/?user=mayurunagar5&theme=github-dark&hide_border=true" alt="GitHub Streak"/>
-
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=mayurunagar5&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=github_dark"
+    alt="GitHub Stats"
+  />
 </p>
 
 ---
