@@ -66,25 +66,30 @@ class Mayur:
 
 ## GitHub Analytics
 
-###  Contribution Streak
+## GitHub Analytics
+
+### 🔥 Contribution Streak
 
 <p align="center">
   <img
-    src="https://streak-stats.demolab.com?user=mayurunagar5&theme=github-dark&hide_border=true"
+    src="./profile/streak.svg"
+    width="495"
     alt="GitHub Contribution Streak"
   />
 </p>
 
 ---
 
-###  Contribution Graph
+### 📊 Contribution Graph
 
 <p align="center">
   <img
-    src="https://github-readme-activity-graph.vercel.app/graph?username=mayurunagar5&theme=github-dark&hide_border=true&custom_title=Mayur%20Unagar%20Contribution%20Graph"
-    alt="GitHub Contribution Graph"
+    src="./profile/contributions.svg"
+    width="900"
+    alt="Mayur Unagar Contribution Graph"
   />
 </p>
+
 ## Featured Projects
 
 | Repository | Description |
