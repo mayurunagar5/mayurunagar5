@@ -98,20 +98,6 @@ class Mayur:
 
 ---
 
-## 2026 Roadmap
-
-
-- [x] Learn Git & GitHub
-- [x] Complete WordPress Internship
-- [x] Complete Python Fundamentals
-- [ ] Master Data Structures
-- [ ] Learn NumPy
-- [ ] Learn Pandas
-- [ ] Build Machine Learning Projects
-- [ ] Learn Deep Learning
-- [ ] Contribute to Open Source
-
----
 
 ## Developer Quote
 
